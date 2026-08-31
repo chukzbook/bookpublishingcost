@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://bookpublishingcost.com/sitemap.xml
