@@ -25,8 +25,12 @@
 {"@type": "Question", "name": "How much does book editing cost?", "acceptedAnswer": {"@type": "Answer", "text": "Professional editing costs $500-$2,000 for a standard manuscript, depending on the editing tier."}},
 {"@type": "Question", "name": "How much does a book cover design cost?", "acceptedAnswer": {"@type": "Answer", "text": "A professional book cover design costs $300-$1,500."}},
 {"@type": "Question", "name": "How much does it cost to print a book?", "acceptedAnswer": {"@type": "Answer", "text": "Printing runs $2.50-$8 per paperback copy; a 100-copy run typically costs $1,200-$2,200."}},
-{"@type": "Question", "name": "How much does an ISBN cost?", "acceptedAnswer": {"@type": "Answer", "text": "An ISBN costs $125 each from Bowker in the United States."}},
-{"@type": "Question", "name": "What is the total cost to self-publish a book?", "acceptedAnswer": {"@type": "Answer", "text": "Self-publishing a professional paperback totals $1,500-$6,000 including all services and a 100-500 copy print run."}}]
+{"@type": "Question", "name": "How much does an ISBN cost?", "acceptedAnswer": {"@type": "Answer", "text": "An ISBN costs $125 each from Bowker in the United States; a block of 10 costs $295."}},
+{"@type": "Question", "name": "What is the total cost to self-publish a book?", "acceptedAnswer": {"@type": "Answer", "text": "Self-publishing a professional paperback totals $1,500-$6,000 including all services and a 100-500 copy print run."}},
+{"@type": "Question", "name": "Is it cheaper to self-publish or use a publisher?", "acceptedAnswer": {"@type": "Answer", "text": "Self-publishing costs $1,500-$6,000 upfront but you keep 100% royalties and control; traditional publishing costs nothing upfront but pays 5-15% royalties and takes control of rights and timeline."}},
+{"@type": "Question", "name": "Can I publish a book with no money?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — a bare-bones DIY release (Amazon KDP, no pro services) can start near $0. Budget roughly $300-$800 if you pay for essential design help. Professional quality starts around $1,500."}},
+{"@type": "Question", "name": "How many copies of my book should I print first?", "acceptedAnswer": {"@type": "Answer", "text": "100-300 copies is the sensible first run for most authors testing a market; 500+ pays off only when you have distribution or events lined up. Per-copy cost falls sharply as quantity rises."}},
+{"@type": "Question", "name": "Do I need my own ISBN?", "acceptedAnswer": {"@type": "Answer", "text": "Yes for full retail distribution: an ISBN identifies you as publisher and is required by Amazon and bookstores. Cost is $125 each from Bowker (US)."}}]
 }</script>
 <style>
 :root{--navy:#16324f;--navy2:#1f3a5f;--cream:#faf7f2;--card:#ffffff;--ink:#20242b;--mut:#5f6672;--gold:#b89c72;--line:#e7e1d6}
@@ -110,6 +114,33 @@ function estimate(){
   document.getElementById('out').textContent='Estimated total: $'+total.toLocaleString()+' (print + services)';
 }
 </script>
+<style>
+.tbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:.92rem;background:var(--card);border-radius:10px;overflow:hidden}
+.tbl th{background:var(--navy);color:#fff;text-align:left;padding:10px 12px;font-size:.85rem}
+.tbl td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl tr:last-child td{border-bottom:none}
+.tbl b{color:var(--navy)}
+.chip{display:inline-block;background:#eef2f7;border:1px solid var(--line);color:var(--navy);border-radius:20px;padding:3px 12px;font-size:.8rem;margin:2px 4px 2px 0}
+.note{font-size:.82rem;color:var(--mut);border-top:1px solid var(--line);margin-top:22px;padding-top:10px}
+</style>
+<h2>2026 publishing costs at a glance</h2>
+<p>Here is what authors actually pay today, based on published 2026 industry pricing, print-vendor rate cards and author-reported quotes:</p>
+<table class="tbl"><tr><th>Cost center</th><th>Typical range</th><th>What you get</th></tr>
+<tr><td><b>Editing</b></td><td>$500 – $2,000</td><td>Developmental, copy edit and proofread rounds for a standard manuscript</td></tr>
+<tr><td><b>Cover design</b></td><td>$300 – $1,500</td><td>Custom front/back cover, revisions, print + digital files</td></tr>
+<tr><td><b>Interior formatting</b></td><td>$150 – $800</td><td>Print-ready layout: trim, type, chapters, page numbers</td></tr>
+<tr><td><b>ISBN &amp; barcode</b></td><td>$125 – $295</td><td>Bowker ISBN block + barcode</td></tr>
+<tr><td><b>Printing (100–500 copies)</b></td><td>$1,200 – $3,500</td><td>Paperback run; per-copy falls as quantity rises</td></tr>
+<tr><td><b>Marketing (optional)</b></td><td>$500 – $5,000+</td><td>Launch assets, ads, PR — the variable that decides sales</td></tr></table>
+
+<h2>Which publishing route is cheapest?</h2>
+<table class="tbl"><tr><th>Route</th><th>Upfront cost</th><th>Royalties</th><th>Trade-offs</th></tr>
+<tr><td><b>Traditional publisher</b></td><td>$0 (they pay you)</td><td>5–15%</td><td>Hardest to land; you surrender rights + timeline control</td></tr>
+<tr><td><b>DIY self-publishing</b></td><td>$300 – $800</td><td>100%</td><td>You do/coordinate everything; quality risk lands on you</td></tr>
+<tr><td><b>Professional self-publishing</b></td><td>$1,500 – $6,000</td><td>100%</td><td>Pro team handles editing, design, ISBN, print and distribution</td></tr>
+<tr><td><b>Hybrid / assisted publisher</b></td><td>$3,000 – $10,000+</td><td>varies</td><td>Fee plus royalty split — read the contract carefully</td></tr></table>
+<p>The $1,500–$6,000 professional band is the sweet spot this site covers: it buys a book that looks indistinguishable from a traditionally published title while you keep 100% of royalties and full control.</p>
+
 <h2>What drives the cost of publishing a book?</h2>
 <p>Six cost centers decide your total. Editing is usually the largest service cost; printing depends on quantity and color; marketing is optional but increasingly essential.</p>
 <ul><li><strong>Editing</strong> — $500–$2,000 for a standard manuscript</li>
@@ -118,10 +149,20 @@ function estimate(){
 <li><strong>ISBN &amp; barcode</strong> — $125 per ISBN from Bowker</li>
 <li><strong>Printing</strong> — $2.50–$8 per paperback copy (100–500 copies)</li>
 <li><strong>Marketing</strong> — $500–$5,000+ depending on ambition</li></ul>
+
+<h2>How to keep costs down without looking cheap</h2>
+<ul>
+<li><strong>Bundle services.</strong> One provider quoting editing + design + print together typically beats hiring five separate freelancers.</li>
+<li><strong>Print the right first quantity.</strong> 100–300 copies tests a market; 1,000+ only pays off with a distribution plan.</li>
+<li><strong>Skip nothing on editing and cover.</strong> They decide reviews and first impressions — the two highest-ROI spends.</li>
+<li><strong>Get 2–3 bundled quotes.</strong> Ranges above are guides; identical specs can vary 30% between providers.</li>
+</ul>
+<p><span class="chip">Editing</span><span class="chip">Cover design</span><span class="chip">Formatting</span><span class="chip">ISBN</span><span class="chip">Printing</span><span class="chip">eBook</span><span class="chip">Distribution</span></p>
 <h2>Service cost guides</h2><div class='cards'><a href="/editing-cost.html"><b>Editing cost</b><span>$500–$2,000 typical</span></a><a href="/cover-design-cost.html"><b>Cover design cost</b><span>$300–$1,500 typical</span></a><a href="/formatting-cost.html"><b>Formatting cost</b><span>$150–$800 typical</span></a><a href="/isbn-cost.html"><b>ISBN cost</b><span>$125 per ISBN</span></a><a href="/marketing-cost.html"><b>Marketing cost</b><span>$500–$5,000+</span></a></div>
 <h2>Printing cost guides</h2><div class='cards'><a href="/cost-to-print-paperback-book.html"><b>Paperback printing</b><span>$2.50–$8 per copy</span></a><a href="/cost-to-print-hardcover-book.html"><b>Hardcover printing</b><span>$8–$20 per copy</span></a><a href="/cost-to-print-fullcolor-book.html"><b>Full-color printing</b><span>3–5× B&W cost</span></a><a href="/print-50-copies-of-a-book-cost.html"><b>50-copy run</b><span>$800–$1,500</span></a><a href="/print-100-copies-of-a-book-cost.html"><b>100-copy run</b><span>$1,200–$2,200</span></a><a href="/print-500-copies-of-a-book-cost.html"><b>500-copy run</b><span>$1,800–$3,500</span></a><a href="/print-1000-copies-of-a-book-cost.html"><b>1,000-copy run</b><span>$3,000–$5,500</span></a></div>
 <h2>By book type</h2><div class='cards'><a href="/cost-to-publish-a-novel.html"><b>Novel / fiction</b><span>$1,500–$4,500</span></a><a href="/cost-to-publish-a-childrens-book.html"><b>Children's book</b><span>$3,000–$8,000</span></a><a href="/cost-to-publish-a-textbook.html"><b>Textbook / academic</b><span>$4,000–$15,000</span></a><a href="/cost-to-publish-a-cookbook.html"><b>Cookbook</b><span>$3,500–$10,000</span></a><a href="/cost-to-publish-a-memoir.html"><b>Memoir / biography</b><span>$2,000–$6,000</span></a><a href="/cost-to-publish-a-business-book.html"><b>Business book</b><span>$2,500–$8,000</span></a></div>
 <h2>By city</h2><div class='cards'><a href="/book-publishing-cost-new-york.html"><b>New York</b><span>$2,000–$6,000</span></a><a href="/book-publishing-cost-los-angeles.html"><b>Los Angeles</b><span>$1,800–$5,500</span></a><a href="/book-publishing-cost-chicago.html"><b>Chicago</b><span>$1,700–$5,000</span></a><a href="/book-publishing-cost-houston.html"><b>Houston</b><span>$1,600–$4,800</span></a><a href="/book-publishing-cost-phoenix.html"><b>Phoenix</b><span>$1,500–$4,500</span></a><a href="/book-publishing-cost-atlanta.html"><b>Atlanta</b><span>$1,600–$4,800</span></a></div>
+<p class="note">Methodology: ranges compiled from published 2026 industry pricing, offset and print-on-demand vendor rate cards, and author-reported quotes collected 2025–2026. Actual quotes vary with page count, trim size, color, quantity and provider. Published by Harmony Publishing LLC — updated September 2026.</p>
 
 <div class="cta"><p>Get an exact, no-obligation quote for <strong>your</strong> book — services, printing and timeline included.</p><a href="https://harmonypublishing.net/self-publishing-packages">Get a Free Quote →</a></div>
 </div>
